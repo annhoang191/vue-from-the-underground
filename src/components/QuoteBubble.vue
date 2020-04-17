@@ -13,14 +13,13 @@ export default {
   name: 'QuoteBubble',
   props: ['character'],
   data: () => ({
-    quotes: []
   }),
 
-  created () {
+  mounted () {
     let title = this.character.publication
     axios
       .get(`https://goodquotesapi.herokuapp.com/title/${title}`)
-      .then(response => (this.quotes = response.data.quotes))
+      .then(response => (this.character.quotes = response.data.quotes))
       .catch(err => console.log(err))
   },
 
@@ -28,8 +27,8 @@ export default {
     randomQuote: function() {
       if (this.character.showQuote === true && this.quotes !== null) {
         return(
-          this.quotes[Math.floor(Math.random() * this.quotes.length)].quote &&
-          this.quotes[Math.floor(Math.random() * this.quotes.length)].quote
+          this.character.quotes[Math.floor(Math.random() * this.character.quotes.length)].quote &&
+          this.character.quotes[Math.floor(Math.random() * this.character.quotes.length)].quote
         )
       }
       return null
