@@ -51,7 +51,8 @@ export default {
           publication: 'Notes From Underground',
           author: 'Fyodor Dostoevsky',
           content: 'the Underground Man is representative of certain people who “not only may but must exist in our society, taking under consideration the circumstances under which our society has generally been formed.',
-          showQuote: false
+          showQuote: false,
+          quotes: []
         },
         {
           src: 'https://i.ytimg.com/vi/Fs41UGRh3rA/hqdefault.jpg',
@@ -59,7 +60,8 @@ export default {
           publication: 'Kokoro',
           author: 'Natsume Soseki',
           content: 'An isolated, bitter man who has no close friends and has mostly given up on life. He saw himself as a virtuous man surrounded by corruption. Gradually he came to understand that he was just as weak and corruptible as the rest of humankind and his self-loathing grew.    Spoiler: He died',
-          showQuote: false
+          showQuote: false,
+          quotes: []
         },
         // {
         //   src: 'https://images-na.ssl-images-amazon.com/images/I/91EWBiFTnGL.jpg',

@@ -7,15 +7,15 @@
     horizontal
     class="bottom-nav"
   >
-    <v-btn>
-      <span>Notes</span>
-      <v-icon>mdi-pencil</v-icon>
+    <v-btn to="/notes" :value="Note">
+        <span>Notes</span>
+        <v-icon>mdi-pencil</v-icon>
     </v-btn>
-    <v-btn>
+    <v-btn to="/" :value="Home">
       <span>Home</span>
       <v-icon>mdi-home</v-icon>
     </v-btn>
-    <v-btn>
+    <v-btn to="/about" :value="About">
       <span>About</span>
       <v-icon>mdi-book</v-icon>
     </v-btn>
@@ -31,6 +31,6 @@ export default {
 <style lang="scss" scoped>
 .bottom-nav {
   opacity: 0.9;
-  height: 40%;
+  height: 2.5em !important;
 }
 </style>
