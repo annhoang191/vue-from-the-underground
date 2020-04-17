@@ -63,14 +63,6 @@ export default {
           showQuote: false,
           quotes: []
         },
-        // {
-        //   src: 'https://images-na.ssl-images-amazon.com/images/I/91EWBiFTnGL.jpg',
-        //   name: 'Sensei',
-        //   publication: 'Kokoro',
-        //   author: 'Natsume Soseki',
-        //   content: 'This dude is also cool i guess?',
-        //   showQuote: false
-        // },
       ],
     }
   },

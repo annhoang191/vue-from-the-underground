@@ -25,13 +25,13 @@ export default {
 
   computed: {
     randomQuote: function() {
-      if (this.character.showQuote === true && this.quotes !== null) {
-        return(
-          this.character.quotes[Math.floor(Math.random() * this.character.quotes.length)].quote &&
-          this.character.quotes[Math.floor(Math.random() * this.character.quotes.length)].quote
-        )
+      if (this.character.showQuote === true) {
+        let index = Math.floor(Math.random() * this.character.quotes.length)
+        if(this.character.quotes[index] && this.character.quotes[index].quote) {
+          return this.character.quotes[index].quote
+        }
       }
-      return null
+      return 'I have nothing to talk about. I just disdain real people'
     }
   }
 }
