@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <div class="text-xs-center" v-show="showButton">
-      <v-btn class="ma-2 intro-btn" tile outlined
+      <v-btn class="ma-2 intro-btn" x-large tile outlined
         @click="toggleButton"
       >
         HOW'S LIFE IN THE UNDERGROUND?
@@ -67,7 +67,7 @@ export default {
 
 .text-xs-center {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); /* IE 9 */

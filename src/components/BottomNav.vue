@@ -6,16 +6,17 @@
     color="white"
     horizontal
     class="bottom-nav"
+    v-model="bottomNav"
   >
-    <v-btn to="/notes" :value="Note">
+    <v-btn to="/notes">
         <span>Notes</span>
         <v-icon>mdi-pencil</v-icon>
     </v-btn>
-    <v-btn to="/" :value="Home">
+    <v-btn to="/" >
       <span>Home</span>
       <v-icon>mdi-home</v-icon>
     </v-btn>
-    <v-btn to="/about" :value="About">
+    <v-btn to="/about">
       <span>About</span>
       <v-icon>mdi-book</v-icon>
     </v-btn>
@@ -23,8 +24,14 @@
 </template>
 
 <script>
+
 export default {
-  name: 'BottomNav'
+  name: 'BottomNav',
+  data: () => {
+    return {
+      bottomNav: 1
+    }
+  }
 }
 </script>
 
